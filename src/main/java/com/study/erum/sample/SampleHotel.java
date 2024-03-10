@@ -8,6 +8,7 @@ import lombok.ToString;
 @Getter
 @Component
 @ToString
+// @AllArgsConstructor 생성자 자동 생성
 public class SampleHotel {
 
 	private Chief chief;
