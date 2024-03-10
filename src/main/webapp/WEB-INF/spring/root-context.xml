@@ -7,10 +7,10 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-		<property name="driverClassName" value="org.h2.Driver"></property>
-		<property name="jdbcUrl" value="jdbc:h2:tcp://localhost/~/test"></property>
-		<property name="username" value="sa"></property>
-		<property name="password" value=""></property>
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:XE"></property>
+		<property name="username" value="webdb"></property>
+		<property name="password" value="12345"></property>
 	</bean>
 	
 	<!-- HikariCP configuration -->
@@ -18,6 +18,6 @@
 		<constructor-arg ref="hikariConfig"></constructor-arg>
 	</bean>
 	
-	<context:component-scan base-package="kr.co.chunjae.sample"></context:component-scan>
+	<context:component-scan base-package="com.study.erum.sample"></context:component-scan>
 		
 </beans>
