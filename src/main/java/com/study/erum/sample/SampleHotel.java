@@ -15,4 +15,6 @@ public class SampleHotel {
 	public SampleHotel(Chief chief) {
 		this.chief = chief;
 	}
+
+
 }
